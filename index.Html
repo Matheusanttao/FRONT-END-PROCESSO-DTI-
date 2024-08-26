@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Notas e Frequência</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Gerenciador de Notas e Frequência</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Inserir Aluno</h5>
+                <form id="alunoForm">
+                    <div class="form-group">
+                        <label for="nomeAluno">Nome do Aluno</label>
+                        <input type="text" class="form-control" id="nomeAluno" placeholder="Nome do Aluno" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label for="nota1">Nota 1</label>
+                            <input type="number" class="form-control" id="nota1" min="0" max="10" placeholder="0-10" required>
+                        </div>
+                        <div class="form-group col">
+                            <label for="nota2">Nota 2</label>
+                            <input type="number" class="form-control" id="nota2" min="0" max="10" placeholder="0-10" required>
+                        </div>
+                        <div class="form-group col">
+                            <label for="nota3">Nota 3</label>
+                            <input type="number" class="form-control" id="nota3" min="0" max="10" placeholder="0-10" required>
+                        </div>
+                        <div class="form-group col">
+                            <label for="nota4">Nota 4</label>
+                            <input type="number" class="form-control" id="nota4" min="0" max="10" placeholder="0-10" required>
+                        </div>
+                        <div class="form-group col">
+                            <label for="nota5">Nota 5</label>
+                            <input type="number" class="form-control" id="nota5" min="0" max="10" placeholder="0-10" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="frequencia">Frequência (%)</label>
+                        <input type="number" class="form-control" id="frequencia" min="0" max="100" placeholder="0-100%" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Adicionar Aluno</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card result-card">
+            <div class="card-body">
+                <h5 class="card-title">Resultados</h5>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nome do Aluno</th>
+                            <th>Média de Notas</th>
+                            <th>Frequência (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="alunoTableBody">
+                        <!-- Conteúdo gerado dinamicamente -->
+                    </tbody>
+                </table>
+                <h6>Média da Turma em Cada Disciplina</h6>
+                <ul id="mediaTurma"></ul>
+                <h6>Alunos Acima da Média da Turma</h6>
+                <ul id="alunosAcimaMedia"></ul>
+                <h6>Alunos com Frequência Abaixo de 75%</h6>
+                <ul id="alunosBaixaFrequencia"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
