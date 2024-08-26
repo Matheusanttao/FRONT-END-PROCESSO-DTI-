@@ -24,14 +24,12 @@ Opcionalmente, um editor de texto (VSCode, Sublime, etc.) para modificar o códi
 Executando o Sistema
 Clone o repositório (ou faça o download dos arquivos) em seu computador:
 
-bash
-Copiar código
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+
+git clone https://github.com/Matheusanttao/FRONT-END-PROCESSO-DTI-.git
 Navegue até o diretório do projeto:
 
-bash
-Copiar código
-cd nome-do-repositorio
+
+cd FRONT-END-PROCESSO-DTI-
 Abra o arquivo index.html em um navegador:
 
 Dê um duplo clique no arquivo index.html.
